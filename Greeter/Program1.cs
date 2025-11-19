@@ -10,9 +10,14 @@ public class PasswordValidator
 
 public static bool Validate(string password)
     {
-    
-        return true;
-        
+        if (password.Length >= 8) 
+        {
+            Console.WriteLine("Password should be more than 8 ");
+            return true;
+        }
+        else 
+        return false;
+
        
     }    
 }
