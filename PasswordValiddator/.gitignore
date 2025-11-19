@@ -1,0 +1,28 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio / VS Code settings
+*.user
+*.suo
+*.vs
+.vscode/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# DLLs / EXEs / PDBs
+*.dll
+*.exe
+*.pdb
+
+# Environment files
+.env
+
+# Rider project files
+.idea/
