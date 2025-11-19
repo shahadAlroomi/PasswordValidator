@@ -2,24 +2,32 @@
 
 
 public class PasswordValidator
-{ 
+{
     public static void Main()
     {
-        
+
     }
 
-public static bool Validate(string password)
+    public static bool Validate(string password)
     {
-        if (password.Length >= 8) 
-        {
-            Console.WriteLine("Password should be more than 8 ");
-            return true;
-        }
-        else 
-        return false;
+        string specialChar = "!#&/()?[]";
 
-       
-    }    
+        foreach (char item in password)
+        {
+            if (char.IsDigit(item) && password.Length >= 8)
+            {
+
+                foreach (char c in specialChar)
+
+                {
+                    if (password.Contains(c))
+                        return true;
+                }
+            }
+
+        }
+        return false;
+    }
 }
 
 
